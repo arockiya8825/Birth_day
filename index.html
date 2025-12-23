@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Day ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Cormorant+Garamond:wght@300;400;600&family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/style/style.css">
+</head>
+<body>
+    <!-- Elegant Cursors -->
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+    <div class="cursor-glow"></div>
+
+    <div class="opening-scene" id="openingScene">
+       <video class="background-video" autoplay muted loop playsinline>
+            <source src="./src/Assets/video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+
+        <div class="typing-container" id="typingText"></div>
+        <div class="heart-container" id="heartContainer">
+            <div class="heart"><img src="./src/Assets/pngegg.png" alt="" style="width: 100px;"></div>
+            <div class="heart-text">Someone made this just for you</div>
+        </div>
+        <div class="scroll-hint" id="scrollHint">SCROLL DOWN ↓</div>
+
+        
+         <!-- Opening Scene -->
+    <!-- <div class="opening-scenefly" id="openingScenefly">
+
+        <div class="butterfly" style="top: 10%; left: 20%;"><img src="./src/Assets/1.png" alt=""></div>
+        <div class="butterfly" style="top: 30%; right: 15%; animation-delay: 2s;"><img src="./src/Assets/2.png" alt=""></div>
+        <div class="butterfly" style="bottom: 20%; left: 30%; animation-delay: 4s;"><img src="./src/Assets/1.png" alt=""></div>
+    </div> -->
+    </div>
+    
+
+
+
+
+    <!-- Memory Stars -->
+    <div id="starsContainer"></div>
+    <div class="star-message" id="starMessage"></div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="mainContent" style="display: none;">
+        
+        <div class="content-wrapper">
+            <h1 class="birthday-title" data-text="Happy Birthday">Happy Birthday</h1>
+            <p class="subtitle">May this day be as extraordinary as you are</p>
+
+            <div class="section-divider">
+                <span class="divider-icon">✨</span>
+            </div>
+
+            <div class="romantic-quote">
+                <p class="quote-text">"In you, I've found the reason why love stories exist"</p>
+                <p class="quote-author">— A WISH FROM THE HEART</p>
+            </div>
+
+            <div class="section-divider">
+                <span class="divider-icon">💫</span>
+            </div>
+            
+            <h2 class="gallery-title">Moments Worth Cherishing</h2>
+
+            <div class="image-gallery">
+                <div class="image-card">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">📸</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">✨</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">💝</div>
+                    </div>
+                </div>
+                <div class="image-card">
+                    <div class="image-wrapper">
+                        <div class="image-placeholder">🌟</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-divider">
+                <span class="divider-icon">🌙</span>
+            </div>
+
+            <div class="time-lock">
+                <div class="lock-icon" id="lockIcon">🔒</div>
+                <div class="unlock-message" id="unlockMessage">A secret message awaits at midnight</div>
+                <div class="time-display" id="timeDisplay"></div>
+                <div class="hidden-message" id="hiddenMessage" style="display: none;">
+                    "Hope this year brings you endless reasons to smile, countless moments of joy, and all the dreams your heart whispers about. You deserve every bit of magic this world has to offer. ✨💖"
+                </div>
+            </div>
+
+            <div class="section-divider">
+                <span class="divider-icon">💝</span>
+            </div>
+
+            <div class="final-message">
+                <p class="final-text">"May your day be filled with laughter, your heart with joy, and your year with moments as beautiful as you are"</p>
+                <p class="signature">With warmest wishes ✨</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Music Control -->
+    <div class="music-control" id="musicControl" style="display: none;">
+        <div class="music-icon">🎵</div>
+    </div>
+
+    <audio id="birthdayMusic" loop>
+        <source src="https://dass9380.neocities.org/Birth_day/src/Assets/Happy_Birthday.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
